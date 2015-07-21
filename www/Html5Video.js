@@ -91,7 +91,7 @@ Html5Video.prototype.stop = function(videoId) {
 			console.error('html video error: ' + err);
 		}, 'Html5Video', 'stop', [ videoId ]);
 	} else {
-		this._play(document.getElementById(videoId));
+		this._stop(document.getElementById(videoId));
 	}
 }
 
